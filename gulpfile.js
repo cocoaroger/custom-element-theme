@@ -3,7 +3,7 @@ var gulp = require('gulp')
 var cleanCSS = require('gulp-clean-css');
 var cssWrap = require('gulp-css-wrap');
 
-var customThemeName='.custom-theme'
+var customThemeName='.dark-theme'
 
 gulp.task('css-wrap', function() {
   return gulp.src( path.resolve('./theme/index.css'))
@@ -16,4 +16,5 @@ gulp.task('move-font', function() {
   return gulp.src(['./theme/fonts/**']).pipe(gulp.dest('dist/fonts'));
 });
 
-gulp.task('default',['css-wrap','move-font']);
+// gulp.task('default',['css-wrap','move-font']);
+gulp.task('default', gulp.series('css-wrap', 'move-font'));

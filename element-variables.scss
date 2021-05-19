@@ -14,7 +14,7 @@ $--color-transition-base: color .2s cubic-bezier(.645,.045,.355,1) !default;
 $--color-white: #fff !default;
 $--color-black: #000 !default;
 
-$--color-primary: #262729 !default;
+$--color-primary: #4E86E0 !default;
 $--color-primary-light-1: mix($--color-white, $--color-primary, 10%) !default; /* 53a8ff */
 $--color-primary-light-2: mix($--color-white, $--color-primary, 20%) !default; /* 66b1ff */
 $--color-primary-light-3: mix($--color-white, $--color-primary, 30%) !default; /* 79bbff */
@@ -25,10 +25,10 @@ $--color-primary-light-7: mix($--color-white, $--color-primary, 70%) !default; /
 $--color-primary-light-8: mix($--color-white, $--color-primary, 80%) !default; /* d9ecff */
 $--color-primary-light-9: mix($--color-white, $--color-primary, 90%) !default; /* ecf5ff */
 
-$--color-success: #409167 !default;
-$--color-warning: #9DA408 !default;
-$--color-danger: #B3450E !default;
-$--color-info: #0A76A4 !default;
+$--color-success: #26CCA7 !default;
+$--color-warning: #F7B500 !default;
+$--color-danger: #F55F23 !default;
+$--color-info: #909BB1 !default;
 
 $--color-success-light: mix($--color-white, $--color-success, 80%) !default;
 $--color-warning-light: mix($--color-white, $--color-warning, 80%) !default;
@@ -40,10 +40,10 @@ $--color-warning-lighter: mix($--color-white, $--color-warning, 90%) !default;
 $--color-danger-lighter: mix($--color-white, $--color-danger, 90%) !default;
 $--color-info-lighter: mix($--color-white, $--color-info, 90%) !default;
 
-$--color-text-primary: #303133 !default;
-$--color-text-regular: #606266 !default;
-$--color-text-secondary: #909399 !default;
-$--color-text-placeholder: #c0c4cc !default;
+$--color-text-primary: #E2E8EE !default;
+$--color-text-regular: #CED6DF !default;
+$--color-text-secondary: #AFB7C3 !default;
+$--color-text-placeholder: #828C9C !default;
 
 /* Link
 -------------------------- */
@@ -52,16 +52,16 @@ $--link-hover-color: $--color-primary !default;
 
 /* Background
 -------------------------- */
-$--background-color-base: #f5f7fa !default;
+$--background-color-base: #0D1420 !default;
 
 /* Border
 -------------------------- */
 $--border-width-base: 1px !default;
 $--border-style-base: solid !default;
-$--border-color-base: #dcdfe6 !default;
-$--border-color-light: #e4e7ed !default;
-$--border-color-lighter: #ebeef5 !default;
-$--border-color-extra-light: #f2f6fc !default;
+$--border-color-base: #3D4C66 !default;
+$--border-color-light: #6D7A92 !default;
+$--border-color-lighter: #A3AEC2 !default;
+$--border-color-extra-light: #D4DCEA !default;
 $--border-color-hover: $--color-text-placeholder !default;
 $--border-base: $--border-width-base $--border-style-base $--border-color-base !default;
 $--border-radius-base: 4px !default;
@@ -109,8 +109,16 @@ $--disabled-border-base: $--border-color-light !default;
 $--icon-color: #666 !default;
 $--icon-color-base: $--color-info !default;
 
+/* Backtop
+-------------------------- */
+$--avatar-background-color: #70819F !default;
+$--backtop-hover-background-color: #1A222F !default;
+$--backtop-background-color: #414960 !default;
+$--backtop-font-color: #FFFFFF !default;
+
 /* Checkbox
 -------------------------- */
+$--checkbox-background-color: #1F2636 !default;
 $--checkbox-font-size: 14px !default;
 $--checkbox-font-weight: $--font-weight-primary !default;
 $--checkbox-color: $--color-text-regular !default;
@@ -169,7 +177,8 @@ $--radio-input-width: 14px !default;
 $--radio-input-border-radius: $--border-radius-circle !default;
 $--radio-input-fill: $--color-white !default;
 $--radio-input-border: $--border-base !default;
-$--radio-input-border-color: $--border-color-base !default;
+$--radio-input-border-color: #3B5F9B !default;
+$--radio-input-background-color: #1A222F !default;
 $--radio-icon-color: $--color-white !default;
 
 $--radio-disabled-input-border-color: $--disabled-border-base !default;
@@ -184,6 +193,7 @@ $--radio-checked-text-color: $--color-primary !default;
 $--radio-checked-input-border-color: $--color-primary !default;
 $--radio-checked-input-fill: $--color-white !default;
 $--radio-checked-icon-color: $--color-primary !default;
+$--radio-checked-input-background-color: #FFFFFF !default;
 
 $--radio-input-border-color-hover: $--color-primary !default;
 
@@ -313,9 +323,10 @@ $--notification-danger-color: $--color-danger !default;
 
 /* Input
 -------------------------- */
+$--input-background-color: #1C1C1C !default;
 $--input-font-size: $--font-size-base !default;
 $--input-color: $--color-text-regular !default;
-$--input-width: 140px !default;
+$--input-width: 240px !default;
 $--input-height: 40px !default;
 $--input-border: $--border-base !default;
 $--input-border-color: $--border-color-base !default;
@@ -414,13 +425,17 @@ $--button-mini-border-radius: #{$--border-radius-base - 1} !default;
 $--button-mini-padding-vertical: 7px !default;
 $--button-mini-padding-horizontal: 15px !default;
 
+$--button-default-background-color: #22293B !default;
 $--button-default-color: $--color-text-regular !default;
 $--button-default-fill: $--color-white !default;
-$--button-default-border: $--border-color-base !default;
+$--button-default-border: #3D4C66 !default;
 
 $--button-disabled-color: $--color-text-placeholder !default;
 $--button-disabled-fill: $--color-white !default;
 $--button-disabled-border: $--border-color-lighter !default;
+$--button-disabled-font-color: #657186;
+$--button-disabled-background-color: #354053;
+$--button-disabled-border-color: #425169;
 
 $--button-primary-border: $--color-primary !default;
 $--button-primary-color: $--color-white !default;
@@ -449,6 +464,7 @@ $--button-active-shade-percent: 10% !default;
 /* cascader
 -------------------------- */
 $--cascader-height: 200px !default;
+$--calendar-selected-background-color: #22293B !default;
 
 /* Switch
 -------------------------- */
@@ -481,7 +497,7 @@ $--table-text-color: $--color-text-regular !default;
 $--table-header-color: $--color-text-secondary !default;
 $--table-row-hover-background: $--background-color-base !default;
 $--table-current-row-background: $--color-primary-light-9 !default;
-$--table-header-background: $--color-white !default;
+$--table-header-background: #394355 !default;
 $--table-footer-background: $--color-text-placeholder !default;
 $--table-fixed-box-shadow: 0 0 10px rgba(0, 0, 0, .12) !default;
 
@@ -491,31 +507,34 @@ $--pagination-font-size: 13px !default;
 $--pagination-fill: $--color-white !default;
 $--pagination-color: $--color-text-primary !default;
 $--pagination-border-radius: 3px !default;
-$--pagination-button-color: $--color-text-primary !default;
+$--pagination-button-color: #E2E8EE !default;
 $--pagination-button-width: 35.5px !default;
 $--pagination-button-height: 28px !default;
 $--pagination-button-disabled-color: $--color-text-placeholder !default;
 $--pagination-button-disabled-fill: $--color-white !default;
 $--pagination-hover-fill: $--color-primary !default;
 $--pagination-hover-color: $--color-white !default;
+$--pagination-background-color: #181F2D !default;
+$--pagination-button-disabled-background-color: #50596C !default;
 
 /* Popover
 -------------------------- */
 $--popover-fill: $--color-white !default;
 $--popover-font-size: $--font-size-base !default;
-$--popover-border-color: $--border-color-lighter !default;
+$--popover-border-color: #3D4C66 !default;
 $--popover-arrow-size: 6px !default;
 $--popover-padding: 12px !default;
 $--popover-padding-large: 18px 20px !default;
 $--popover-title-font-size: 16px !default;
 $--popover-title-color: $--color-text-primary !default;
+$--popover-background-color: #0D1420 !default;
 
 /* Tooltip
 -------------------------- */
-$--tooltip-fill: $--color-text-primary !default;
+$--tooltip-fill: #000000 !default;
 $--tooltip-color: $--color-white !default;
 $--tooltip-font-size: 12px !default;
-$--tooltip-border-color: $--color-text-primary !default;
+$--tooltip-border-color: #3D4C66 !default;
 $--tooltip-arrow-size: 6px !default;
 $--tooltip-padding: 10px !default;
 
@@ -570,9 +589,9 @@ $--badge-size: 18px !default;
 
 /* Card
 --------------------------*/
-$--card-border-color: $--border-color-lighter !default;
+$--card-border-color: #3D4C66 !default;
 $--card-border-radius: 4px !default;
-$--card-padding: 20px !default;
+$--card-padding: 16px !default;
 
 /* Slider
 --------------------------*/
@@ -597,6 +616,8 @@ $--steps-padding: 20px !default;
 
 /* Menu
 --------------------------*/
+$--menu-background-color: #242C3B !default;
+$--menu-item-font-color: #AFB7C3 !default;
 $--menu-item-font-size: $--font-size-base !default;
 $--menu-item-color: $--color-text-primary !default;
 $--menu-item-fill: $--color-white !default;
@@ -623,6 +644,7 @@ $--datepicker-inrange-hover-color: $--border-color-extra-light !default;
 $--datepicker-active-color: $--color-primary !default;
 $--datepicker-text-hover-color: $--color-primary !default;
 $--datepicker-cell-hover-color: #fff !default;
+$--datepicker-inrange-background-color: #D4DCEA !default;
 
 /* Loading
 --------------------------*/
@@ -640,7 +662,7 @@ $--carousel-arrow-font-size: 12px !default;
 $--carousel-arrow-size: 36px !default;
 $--carousel-arrow-background: rgba(31, 45, 61, 0.11) !default;
 $--carousel-arrow-hover-background: rgba(31, 45, 61, 0.23) !default;
-$--carousel-indicator-width: 30px !default;
+$--carousel-indicator-width: 24px !default;
 $--carousel-indicator-height: 2px !default;
 $--carousel-indicator-padding-horizontal: 4px !default;
 $--carousel-indicator-padding-vertical: 12px !default;
@@ -648,6 +670,8 @@ $--carousel-indicator-out-color: $--border-color-hover !default;
 
 /* Collapse
 --------------------------*/
+$--collapse-header-background-color: #1B222F !default;
+$--collapse-content-background-color: #242C3B !default;
 $--collapse-border-color: $--border-color-lighter !default;
 $--collapse-header-height: 48px !default;
 $--collapse-header-padding: 20px !default;
@@ -667,7 +691,7 @@ $--transfer-panel-header-height: 40px !default;
 $--transfer-panel-header-background: $--background-color-base !default;
 $--transfer-panel-footer-height: 40px !default;
 $--transfer-panel-body-height: 246px !default;
-$--transfer-item-height: 30px !default;
+$--transfer-item-height: 32px !default;
 $--transfer-item-hover-background: $--color-text-secondary !default;
 $--transfer-filter-height: 32px !default;
 

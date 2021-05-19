@@ -18,9 +18,11 @@ npm install
 ```shell
 # init variables file
 et -i
+node_modules/.bin/et -i
 
 # build theme
 et
+node_modules/.bin/et
 
 # gulp css name wrapper
 gulp
